@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Phone-Throw</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <!-- option -->
+        <div class="upperLimit">
+            <p>Upper Limit:</p>
+            <input type="text" id="upperLimit" name="limit" value="100">
+        </div>
+        <div>
+            <p>Trys:</p>
+            <input type="text" id="trys" name="trys" value="5">
+        </div>
+        <div>
+            <button class="start" type="button" id="start">Start</button>
+        </div> 
+    </header>
+
+    <main id="background">
+        <!-- gameplay -->
+        <h1>Try 1</h1>
+
+        <section class="guess">
+            <p>Guess:</p>
+            <input type="text" id="guess" name="guess" value="">
+            <button class="start" type="button" id="checkGuess">check</button>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Result -->
+        <section class="result">
+            <h2>Result:</h2>
+            <p class="hitOrMiss"></p>
+            <p class="resultText"></p>
+        </section>
+    </footer>
+
+    <script type ="text/javascript" src="myScript.js"></script>
+</body>
+</html>

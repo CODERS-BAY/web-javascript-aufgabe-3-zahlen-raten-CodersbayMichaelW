@@ -1,0 +1,61 @@
+:root {
+    --black: rgb(0, 0, 0);
+    --dark: rgb(50, 50, 50);
+    --grey: rgb(230, 230, 230);
+    --white: rgb(255, 255, 255);
+    --metalic: rgb(155, 162, 163);
+    --cyan: rgb(0, 255, 255);
+    --orange: rgb(255, 163, 77);
+    --orangeLight: rgb(252, 193, 137);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Merriweather', Arial;
+    background-color: var(--dark);
+    color: var(--grey);
+}
+
+/* header */
+header {
+    border-bottom: 2px solid var(--orange);
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+}
+header div {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header div:not(:first-child) {
+    margin-left: 5%;
+}
+header input {
+    margin-left: 0.5rem;
+    padding-left: 0.5rem;
+    width: 50px;
+    height: 2rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    border: none;
+}
+header button {
+    font-size: 1.5rem;
+    width: 80px;
+    height: 3rem;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--orange);
+}
+header button:hover {
+    background-color: var(--orangeLight);
+}
