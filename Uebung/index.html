@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Phone-Throw</title>
+    <title>Number Guessing</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"/> 
@@ -12,22 +12,25 @@
 <body>
     <header>
         <!-- option -->
-        <div class="upperLimit">
+        
+        <div class="upperLimit"> <!-- upper limit -->
             <p>Upper Limit:</p>
             <input type="text" id="upperLimit" name="limit" value="100">
         </div>
-        <div>
+        
+        <div> <!-- trys -->
             <p>Trys:</p>
             <input type="text" id="trys" name="trys" value="5">
         </div>
-        <div>
+        
+        <div> <!-- start button -->
             <button class="start" type="button" id="start">Start</button>
-        </div> 
+        </div>
     </header>
 
     <main id="background">
         <!-- gameplay -->
-        <h1>Try 1</h1>
+        <h1>Try 0</h1>
 
         <section class="guess">
             <p>Guess:</p>
@@ -40,11 +43,11 @@
         <!-- Result -->
         <section class="result">
             <h2>Result:</h2>
-            <p class="hitOrMiss"></p>
-            <p class="resultText"></p>
+            <p id="resultText"></p>
         </section>
     </footer>
 
-    <script type ="text/javascript" src="myScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type ="text/javascript" src="js/myScript.js"></script>
 </body>
 </html>
