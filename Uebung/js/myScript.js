@@ -18,6 +18,7 @@ function startGame() {
         $("#checkGuess").prop("disabled", false);
         $("main").css("opacity", "1");
         $("h1").html("Try 1");
+        $("#start").css("animation-name", "none");
         document.getElementById("resultText").innerHTML = "";
 
         let upperLimit = Number(document.getElementById("upperLimit").value) + 1;
@@ -35,6 +36,7 @@ function checkGuess() {
             won();
             $("#guess").prop("disabled", true);
             $("#checkGuess").prop("disabled", true);
+            $("#start").css("animation-name", "start-help");
         }
         // number to low or to high
         else {

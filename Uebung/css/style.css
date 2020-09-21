@@ -56,9 +56,26 @@ header button {
     border-radius: 20px;
     border: none;
     background-color: var(--orange);
+
+    animation-name: start-help;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 header button:active {
     transform: scale(0.95);
+}
+@keyframes start-help {
+    0% {
+    }
+    50% {
+        /* -webkit-box-shadow: 0px 0px 5px 3px  rgb(252, 193, 137), 0px 0px 5px 5px  rgb(252, 193, 137), 0px 0px 5px 8px  rgb(252, 193, 137);  */
+        box-shadow: 0px 0px 5px 2px  rgb(252, 193, 137), 0px 0px 5px 4px  rgba(252, 193, 137, 0.85), 0px 0px 5px 6px  rgba(252, 193, 137, 0.5);
+        background-color: var(--orangeLight);
+    }
+    100% {
+    }
 }
 
 /* main */
