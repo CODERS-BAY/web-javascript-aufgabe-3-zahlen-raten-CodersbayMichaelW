@@ -1,0 +1,164 @@
+:root {
+    --black: rgb(0, 0, 0);
+    --dark: rgb(50, 50, 50);
+    --grey: rgb(230, 230, 230);
+    --white: rgb(255, 255, 255);
+    --metalic: rgb(155, 162, 163);
+    --cyan: rgb(0, 255, 255);
+    --orange: rgb(255, 163, 77);
+    --orangeLight: rgb(252, 193, 137);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Merriweather', Arial;
+    background-color: var(--dark);
+    color: var(--grey);
+}
+
+/* header */
+header {
+    border-bottom: 2px solid var(--orange);
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    padding-bottom: 1rem;
+}
+header div {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header div:not(:first-child) {
+    margin-left: 5%;
+}
+header input {
+    margin-left: 0.5rem;
+    width: 50px;
+    height: 2rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+header button {
+    font-size: 1.5rem;
+    width: 80px;
+    height: 3rem;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--orange);
+
+    animation-name: start-help;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+header button:active {
+    transform: scale(0.95);
+}
+@keyframes start-help {
+    0% {
+    }
+    50% {
+        /* -webkit-box-shadow: 0px 0px 5px 3px  rgb(252, 193, 137), 0px 0px 5px 5px  rgb(252, 193, 137), 0px 0px 5px 8px  rgb(252, 193, 137);  */
+        box-shadow: 0px 0px 5px 2px  rgb(252, 193, 137), 0px 0px 5px 4px  rgba(252, 193, 137, 0.85), 0px 0px 5px 6px  rgba(252, 193, 137, 0.5);
+        background-color: var(--orangeLight);
+    }
+    100% {
+    }
+}
+
+/* main */
+main {
+    text-align: center;
+    opacity: 0.5;
+    font-size: 1rem;
+    margin: 5rem 0;
+}
+main h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.guess {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+.guess p {
+    margin-right: 1rem;
+}
+.guess input, .guess button {
+    font-size: 1rem;
+    height: 30px;
+    width: 80px;
+    border: none;
+}
+.guess input {
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.guess button {
+    font-weight: bold;
+    color: var(--black);
+    background-color: var(--orange);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.guess button:active {
+    transform: scale(0.95);
+}
+
+/* footer */
+footer {
+    border-top: 2px solid var(--orange);
+    padding-top: 2rem;
+    height: 150px;
+}
+.result {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+@media (min-width: 800px) {
+    /* header */
+    header {
+        border-radius: 50%;
+    }
+    header div {
+        font-size: 2rem;
+    }
+    header button:hover {
+        background-color: var(--orangeLight);
+    }
+
+    /* main */
+    main {
+        font-size: 2rem;
+    }
+    main h1 {
+        font-size: 4rem;
+    }
+    .guess button:hover {
+        background-color: var(--orangeLight);
+    }
+
+    /* footer */
+    footer {
+        border-radius: 50%;
+    }
+    .result {
+        font-size: 2rem;
+    }
+}
